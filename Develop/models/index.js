@@ -20,7 +20,7 @@ Product.belongsToMany (Tag,{through:'product_id',
 })
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product,{
-  through:'tag_id',
+  through:'product_tag',
   onDelete:'cascade'
 })
 
